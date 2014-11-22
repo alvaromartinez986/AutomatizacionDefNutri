@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VentanaPrincipal</class>
+ <widget class="QMainWindow" name="VentanaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Proyecto analisis deficiencias nutricionales</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="imagen">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>350</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuInicio">
+    <property name="title">
+     <string>Inicio</string>
+    </property>
+    <addaction name="actionAbrir_Imagen"/>
+    <addaction name="actionGuardar_Imagen"/>
+   </widget>
+   <widget class="QMenu" name="menuImagen">
+    <property name="title">
+     <string>Imagen</string>
+    </property>
+    <addaction name="actionHistograma"/>
+   </widget>
+   <addaction name="menuInicio"/>
+   <addaction name="menuImagen"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir_Imagen">
+   <property name="text">
+    <string>Abrir Imagen</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Imagen">
+   <property name="text">
+    <string>Guardar Imagen</string>
+   </property>
+  </action>
+  <action name="actionHistograma">
+   <property name="text">
+    <string>Histograma</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
